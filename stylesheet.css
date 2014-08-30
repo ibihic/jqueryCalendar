@@ -1,0 +1,49 @@
+.titles {
+    font-size: 72px;
+    color: rgb(240,140,240);
+    text-align: center;
+}
+
+.classy {
+    border: 1px solid rgb(240,140,240);
+}
+
+th {
+    color: blue;
+}
+
+td {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+td:hover {
+    background-color: rgba(100,100,200, 0.5);
+}
+
+.date{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.event {
+    background-color: rgba(150, 50,200, 0.1);
+}
+
+.outside{
+    color: rgb(150,150,150);
+}
+
+
+
+/* FORM */
+
+form {
+    margin: 15px auto;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid rgb(240,140,240);
+}
