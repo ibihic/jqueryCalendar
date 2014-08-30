@@ -45,10 +45,23 @@ $(document).ready(function() {
 
         console.log('clicked button!');
 
-        var name = $('[name="eventName"]').val();
-        var day = $('[name="eventDay"]').val();
+        // var name = $('[name="eventName"]').val();
+        // var day = $('[name="eventDay"]').val();
+        var nameField = $('[name="eventName"]');
+        var name = nameField.val();
+        var dayField = $('[name="eventDay"]');
+        var day = dayField.val();
 
         insertEvent(name, day);
+
+        // $('[name="eventName"]').val('');
+        // $('[name="eventDay"]').val('');
+
+        nameField.val('');
+        dayField.val('');
+
+        $('#myModal').modal('hide');
+
     });
 
 
@@ -69,6 +82,8 @@ $(document).ready(function() {
 
         var day = $(event.target).children('.date').text();
         $('[name="eventDay"]').val(day);
+
+        $('#myModal').modal('toggle');
 
         console.log(day);
     });
